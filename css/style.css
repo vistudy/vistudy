@@ -1,0 +1,439 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'fontello', sans-serif;
+  letter-spacing: 0.7px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section>.container {
+  width: 1100x;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/*Chung cho cả bài*/
+.time {
+  font-style: italic;
+}
+
+:root {
+  --primary-color: #047aed;
+  --light-text: #868e96;
+  --border-color: #9DB2BF;
+  --icon-color: #457b9d;
+
+}
+
+
+
+
+
+/*Mục tiêu nghề nghiệp và thông tin cá nhân*/
+.container.about {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  grid-template-rows: 100%;
+  padding: 0;
+}
+
+.target,
+.personal-info {
+  margin-top: 20px;
+}
+
+
+ul.mt-40.info {
+  padding-left: 0;
+  color: black;
+}
+
+ul.mt-40.info li {
+  padding-left: 0;
+  color: black;
+}
+
+#target {
+  margin-left: 10%;
+}
+
+#target p {
+  color: var(--light-text);
+}
+
+ul.info span {
+  color: #000;
+  /* Change the text color of only the span elements */
+}
+
+ul.mt-40.info li {
+  color: var(--light-text);
+}
+
+/*Phần hình ảnh và chữ đầu*/
+
+#banner {
+  padding-bottom: 0;
+  position: relative;
+}
+#banner img{
+  filter: brightness(0.5);
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#fff;
+}
+
+/*Giới thiệu sơ sơ*/
+.container .about{
+  line-height: 1.6;
+}
+#personal-info {
+  background-color: #C4DFDF;
+  padding-left: 40px;
+}
+
+#personal-info li {
+  list-style: none;
+}
+
+#target,
+#personal-info {
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.personal-info i {
+  margin-right: 10px;
+  margin-top: 100px;
+}
+
+.personal-info-icon {
+  margin-top: 30px;
+  color: var(--icon-color);
+}
+
+.section-title {
+  margin-bottom: 24px;
+}
+
+
+/*Thanh điều hướng*/
+.nav-bar div {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  border-right: 1px solid var(--border-color);
+}
+
+.nav-bar div:nth-child(3) {
+  border-right: none;
+}
+
+.nav-bar div:nth-child(4) {
+  border-left: 1px solid var(--border-color);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 0;
+  margin: 0;
+}
+
+.container.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+}
+
+.avt img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.avt {
+  position: absolute;
+  top: 580px;
+  right: 480px;
+
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar i {
+  color: var(--icon-color);
+}
+
+
+
+
+
+/* Thông tin nghề nghiệp*/
+#job-info {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.job-info {
+  width: 160vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 2fr 2fr;
+  grid-gap: 20px 50px;
+}
+
+.info.info--1,
+.info.info--2,
+.info.info--3,
+.info.info--4,
+.info.info--5,
+.info.info--6 {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+}
+
+#company {
+  padding-bottom: 5px;
+  color: black;
+}
+
+.time {
+  display: flex;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+
+.job-info-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.job-info-title i {
+  font-size: 24px;
+}
+
+.paragragh {
+  margin-bottom: 30px;
+
+}
+
+.paragraph li {
+  color: #199cdb;
+}
+
+ul.paragragh li p {
+  color: var(--light-text);
+}
+
+.job-info-title {
+  color: black;
+}
+
+.highlight {
+  background-color: var(--icon-color);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.hobby {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 10px;
+}
+
+.hobby-item {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-align: center;
+}
+
+.hobby-item i {
+  border: 1.5px solid #457b9d;
+  color: #457b9d;
+  border-radius: 50px;
+  padding: 13px;
+}
+
+.hobby-item p {
+  margin-top: 10px;
+}
+
+li {
+  color: #199cdb
+}
+
+li p {
+  color: black;
+}
+
+.line-blue {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+  border-radius: 10px;
+}
+
+.line-grey {
+  background: #ccc5b9;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+  border-radius: 10px;
+}
+
+#highlight {
+  background-color: var(--icon-color);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+
+
+/*Chứng chỉ*/
+.container.cert-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cert-info div {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.cert-info div:nth-child(1) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cert-info div:nth-child(2) {
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.cert-info p {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h1 {
+  padding: 10px 10px 30px 10px;
+}
+
+.project-title{
+  color: black;
+}
+
+/*Dự án*/
+
+.container.project-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  gap: 50px;
+  color: var(--light-text);
+}
+
+.basic-info {
+  display: flex;
+  gap: 30px;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+td:nth-child(odd) {
+  width: 90px;
+  padding-left: 20px;
+}
+
+td:nth-child(even) {
+  padding: 10px;
+}
+
+table {
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+  height: 200px;
+}
+
+td {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-title {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+/*Contact*/
+.contact li {
+  display: inline-block;
+  padding: 0 30px 0 0;
+  margin: 0 30px 0 0;
+  justify-content: space-evenly;
+  align-items: space-between;
+
+}
+
+#footer {
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  margin-top: 200px;
+
+}
+
+#contact {
+  margin: 0 auto;
+  display: block;
+}
+
+ul.contact i {
+  color: #199cdb;
+}
+
+.contact li{
+  color: var(--light-text);
+}
